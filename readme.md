@@ -17,18 +17,18 @@ CSS selector er moto likhe shob element select kore.
 Eta ekta NodeList (array er moto).
 
 2. Create and insert a new element into the DOM
-   Create element → document.createElement("tag")
-   Text boshano → element.innerText = "text";
-   Insert kora → parent.appendChild(element)
+Create element → document.createElement("tag")
+Text boshano → element.innerText = "text";
+Insert kora → parent.appendChild(element)
 
 3. Event Bubbling
-   Event bubbling mane hocche kono element e event ghotle,
-   seta uporer parent element gulo teo uthe jay.
+Event bubbling mane hocche kono element e event ghotle,
+seta uporer parent element gulo teo uthe jay.
 
 4. Event Delegation
-   Event Delegation mane hocche parent element e event listener boshai, ar child element er kaj handle kori.
-   Karone event bubbling ache bole eta possible.
+Event Delegation mane hocche parent element e event listener boshai, ar child element er kaj handle kori.
+Karone event bubbling ache bole eta possible.
 
 5. preventDefault() vs stopPropagation()
    preventDefault() = default kaj bondho koro.
-   stopPropagation() = upor parent e event jete debe na.
+  stopPropagation() = upor parent e event jete debe na.

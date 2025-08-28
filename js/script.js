@@ -3,8 +3,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-   
-    const heartBtn = document.querySelectorAll(".button button")[0];
+    
+    const heartBtn = document.querySelectorAll(".button button")[0]; 
     const coinBtn = document.querySelectorAll(".button button")[1];  
     const copyBtn = document.querySelectorAll(".button button")[2];  
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let coinCount = 100;
     let copyCount = 0;
 
-    
+   
     function updateNavbar() {
         heartBtn.innerHTML = heartCount + ' <img src="assets/heart.png" class="h-5 w-5">';
         coinBtn.innerHTML = coinCount + ' <img src="assets/coin.png" class="h-5 w-5">';
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
 
     cards.forEach(function (card) {
-       
+        
         const heartIcon = card.querySelector(".fa-heart");
         const callButton = card.querySelector(".fa-phone").closest("button");
         const copyButton = card.querySelector(".fa-copy").closest("button");
@@ -77,13 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     const historyList = document.createElement("div");
-    historyList.classList.add("p-3", "w-full", "flex", "flex-row", "gap-2");
+    historyList.classList.add("p-3", "w-full", "flex", "flex-col", "gap-2");
     historySection.appendChild(historyList);
 
     
     function addToHistory(name, number) {
         const item = document.createElement("div");
-        item.classList.add("border-b "  , "py-2");
+        item.classList.add("border-b", "py-2");
 
         
         const now = new Date();
@@ -103,6 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         historyList.innerHTML = "";
     });
 
-    // First time navbar update call
+    
     updateNavbar();
 });
